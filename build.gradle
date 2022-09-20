@@ -21,5 +21,8 @@ dependencies {
 	// From local
 	implementation 'com.malchrosoft:MalchroSoftUtils:1.0-SNAPSHOT'
 
+	// https://mavenlibs.com/maven/dependency/org.codelibs/jcifs
+	implementation 'org.codelibs:jcifs:2.1.32'
+
     testImplementation 'junit:junit:4.12'
 }

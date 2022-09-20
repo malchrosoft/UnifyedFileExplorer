@@ -42,6 +42,18 @@ public class Mulfolasonex
 		{
 			Logger.getLogger(Mulfolasonex.class.getName()).log(Level.SEVERE, null, ex);
 		}
+		
+		
+		try ( Stream<Path> paths = Files.walk(Paths.get("smb://malchro-nas.local/fichiers/Aymeric")))
+		{
+			paths
+				.filter(Files::isRegularFile)
+				.filter((Path f) -> f.toString().endsWith(".pdf"))
+				.forEach(System.out::println);
+		} catch (IOException ex)
+		{
+			Logger.getLogger(Mulfolasonex.class.getName()).log(Level.SEVERE, null, ex);
+		}
 
 		try
 		{
