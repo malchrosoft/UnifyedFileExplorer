@@ -23,7 +23,7 @@ public class Testouillages
 	{
 		String url = "smb://192.168.0.25/fichiers/Aymeric";
 		String userName = "aymeric.malchrowicz";
-		String password = "+4ym3r1cM*";
+		String password = "mdpPTSTQV";
 		String domain = "WORKGROUP";
 
 		NtlmPasswordAuthenticator auth = new NtlmPasswordAuthenticator(domain, userName, password);
